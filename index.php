@@ -1,58 +1,33 @@
 <?php
-    $num = 9;
+    $num = 0;
 
-    switch ($num) {
-        case ($num%2 == 0):   
-            echo "Es par";
-            break;
-        case ($num%2 != 0):   
-            echo "No es par";
-            break;
-        default:
-            echo "Error inesperado";
-            break;
+    if($num > 0){
+        echo "Es positivo";
+    } elseif ($num < 0) {
+        echo "Es negativo";
+    } else {
+        echo "Es cero";
     }
 
     $month = "octubre";
 
-    switch ($month) {
-        case (strtolower($month) == "enero"):
+    switch (strtolower($month)) {
+        case "enero":
+        case "febrero":
+        case "marzo":
+        case "abril":
+        case "noviembre":
+        case "diciembre":
             echo "<br/>Verano";
             break;
-        case (strtolower($month) == "febrero"):
-            echo "<br/>Verano";
-            break;
-        case (strtolower($month) == "marzo"):
-            echo "<br/>Verano";
-            break;
-        case (strtolower($month) == "abril"):
-            echo "<br/>Verano";
-            break;
-        case (strtolower($month) == "mayo"):
+        case "mayo":
+        case "junio":
+        case "julio":
+        case "agosto":
+        case "septiembre":
+        case "octubre":
             echo "<br/>Invierno";
             break;
-        case (strtolower($month) == "junio"):
-            echo "<br/>Invierno";
-            break;
-        case (strtolower($month) == "julio"):
-            echo "<br/>Invierno";
-            break;
-        case (strtolower($month) == "agosto"):
-            echo "<br/>Invierno";
-            break;
-        case (strtolower($month) == "septiembre"):
-            echo "<br/>Invierno";
-            break;
-        case (strtolower($month) == "octubre"):
-            echo "<br/>Invierno";
-            break;
-        case (strtolower($month) == "noviembre"):
-            echo "<br/>Verano";
-            break;
-        case (strtolower($month) == "diciembre"):
-            echo "<br/>Verano";
-            break;
-        
         default:
             echo "<br/>Mes no valido";
             break;
